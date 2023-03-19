@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Portfolio</title>
+<meta name="description" content="Roughly 155 characters">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha256-wLz3iY/cO4e6vKZ4zRmo4+9XDpMcgKOvv/zEU3OMlRo=" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha256-m81NDyncZVbr7v9E6qCWXwx/cwjuWDlHCMzi9pjMobA=" crossorigin="anonymous"></script>
+<!-- Content -->
+<!-- MODIFICACION PARA VER SI FUNCIONA PARA SUBIR EL PORFOLIO ACTUALIZADO EN 2DO MODULO -->
+
+    <div class="card mat-card" id="first-card">
+        <div id="profile-background"><img src="https://images2.alphacoders.com/909/909663.png" alt="Imagen de fondo"></div>
+        <div id="info" style="padding: 16px">
+            <div id="info-img">
+                <img class="profile-image" src="https://scontent-eze1-1.xx.fbcdn.net/v/t39.30808-6/241439115_10228327080188557_2383562072084277489_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeEKGs4cZ2oDIeoUhMTafAfchtt8dXex6RaG23x1d7HpFkgbBQ-xKiu-Ngd6BEJm2k8&_nc_ohc=2eE1PDXvXFMAX9nfHDT&_nc_ht=scontent-eze1-1.xx&oh=00_AfDIG0ca67-bO9hucvxoTUehO6U2Qz-WWfrJYOUzJ-9mCg&oe=63FCBC76" alt="Imagen de perfil">
+                <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
+            </div>
+            <div id="info-data">
+                <div>
+                    <h1>Daniele Fabricio</h1>
+                    <div id="info-company">Administrativo en Colegio De Escribanos De Entre Ríos</div>
+                    <div id="info-contact">
+                        <span>Concepción Del Uruguay, Entre Ríos (Argentina)</span>
+                        <span><a href="#">Informacion de contacto</a></span>
+                    </div>
+                </div>
+                    <ul id="info-datails">
+                        <li><a href="#">
+                            <img src="https://static.javatpoint.com/images/javascript/javascript_logo.png">
+                        </a></li>
+                        <li><a href="#">
+                            <img src="https://play-lh.googleusercontent.com/vzHVyL8G7birnPZ0zuCQQ2uDxuLIXzYOUGjFDFzIqfx-ww1fq8IysoEiWzhWI3Dw08g=w240-h480-rw">
+                        </a></li>
+                        <li><a href="#">
+                            <img src="https://fernandosarachaga.com/wp-content/uploads/lenguaje-programacion-css.jpeg">
+                        </a></li>
+                    </ul>
+            </div>
+            <div id="info-actions">
+                <button type="button" class="btn btn-primary">Estoy interesado en</button>
+                <button type="button" class="btn btn-light">Añadir sección</button>
+                <button type="button" class="btn btn-lihgt">Más</button>
+            </div>
+        </div>
+    </div>
+    <div class="card mat-card" id="1">
+        <div class="card-titles">
+            <h2>Acerca de</h2>
+            <div class="btn-edit" onclick="cambiar_parrafo()">
+                <a href="#" class="btn-right">
+                    <i class="fa fa-pen"></i>
+                </a>
+            </div>
+        </div>
+        <div>
+            <p id="text-acercade">Tengo 36 años, realizo actividades administrativas, tributariuas y judiciales hace mas de 14 años en el Colegio De Escribanos de Entre Ríos</p>
+        </div>
+        <div>
+            <input id="edit-acercade" type="text" oninput="myFunction2(this.value)" style="display:none">
+        </div>
+    </div>
+    <div class="card mat-card" id="hobbies">hobbies 
+        <img class="hobbies-image" src="https://scontent-eze1-1.xx.fbcdn.net/v/t1.6435-9/120937777_10225691297615640_3657202155827944917_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=e3f864&_nc_eui2=AeFHoc_R3b6pp_xGRHqzQd1MbgySuI-8N89uDJK4j7w3z4r1kITGhCCMB-3WSVa7EM8&_nc_ohc=4nXCGV2ya38AX9vcrVd&_nc_ht=scontent-eze1-1.xx&oh=00_AfA6T0HX7_VEHzeUTCBzUG-EflNmOkVRljVjIM2eJ6zK3Q&oe=641F81C0" alt="Drums">
+    </div>
+<!-- Probando Flexbox 17 de febrero-->
+
+    <h1 style="font-size: 50px; margin: 40px; padding: 60px; text-align: center;">METRONOMO EN CONSTRUCCION</h1>
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+    <h1 style="font-size: 50px; margin: 40px; padding: 60px; text-align: center;">LINKS DE INTERES</h1>
+    <div class="flex-container">
+            <a href="https://twitter.com/UnderrrControl">twitter</a>
+            <a href="https://www.instagram.com/underrrcontrol/?hl=es">instagram</a>
+            <a href="https://github.com/underrrcontrol">github</a>
+    </div>
+
+    <script>
+        //funcion que
+        //cambia el estilo del input a visible
+        //toma el valor del texto del parrafo con id "text-acercade"
+        //lo muestra en consola .
+        function cambiar_parrafo(){
+            document.getElementById("edit-acercade").style.display="block";
+            let text = document.getElementById("text-acercade").innerText;
+            console.log(texto);
+        };
+    
+        function myFunction2(valor){
+            document.getElementById("text-acercade").innerText=valor
+        };
+        let textarea=document.getElementById("edit-acercade")
+        textarea.addEventListener('Keyup', (e) => {
+            logmessage('Key "${e.key}" released [event: keyup]');
+            if (e.key=="Enter"){
+                document.getElementById("edit-acercade").style.display="none"
+                }
+            });
+            //carga el contenido de un archivo de texto
+            //y lo muestra en el parrafo
+            function showFile(input) {
+                let file = input.files[0];
+                alert(`File name: ${file.name}`); // e.g my.png
+                alert(`Last modified: ${file.lastModified}`); // e.g 1552830408824
+    
+                let reader = new FileReader();
+                reader.readAsText(file);
+                reader.onload = function() {
+                    console.log(reader.result);
+                    document.getElementById("text-acercade").innerText=reader.result;
+                };
+                reader.onerror = function() {
+                    console.log(reader.error);
+                };
+            };
+    
+
+        function foo() {
+            undefined = 2; // bad idea!
+            console.log(undefined*2);
+            var newDiv = document.createElement("div");
+            var newContent = document.createTextNode("Hola! ¿Qué tal? Soy un párrafo creado por código de manera dinámica, por medio de una función.") // Y la ubicación en la página se la damos con un insertbefore id = 1, osea que sería antes del 2do div, osea antes del div con id 1;
+            newDiv.appendChild(newContent); //añade texto al div creado.
+            // añade el elemento creado y su contenido al DOM
+            var currentDiv = document.getElementById("1");
+            document.body.insertBefore(newDiv, currentDiv);
+        }
+
+        foo();
+
+    </script>
+    <footer>Autoría y derechos Daniele Fabricio - Estudiante developer Argentina Programa</footer>
+</body>
+</html>
